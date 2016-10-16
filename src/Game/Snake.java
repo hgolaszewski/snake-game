@@ -159,7 +159,7 @@ public class Snake implements Runnable {
             }
             else if (snakePart.get(0).getX() <= -30) {
                 
-                snakePart.get(0).setX(600);
+                snakePart.get(0).setX(570);
                 
             }
             else if (snakePart.get(0).getY() >= 600) {
@@ -169,7 +169,7 @@ public class Snake implements Runnable {
             }
             else if (snakePart.get(0).getY() <= -30) {
                 
-                snakePart.get(0).setY(600);
+                snakePart.get(0).setY(570);
                 
             }
 
