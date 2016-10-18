@@ -17,14 +17,14 @@ public class Panel extends JPanel {
     
     public Panel() {
 
-        super.setFocusable(true);
-        super.setBackground(Color.BLACK);
-        super.setPreferredSize(new Dimension(600, 600));
-        this.snake = new Snake(this);
-        this.snakeThread = new Thread(snake);
-        this.snakeThread.start();
-        this.controller = new Controller(snake);
-        super.addKeyListener(controller);
+        setFocusable(true);
+        setBackground(Color.BLACK);
+        setPreferredSize(new Dimension(600, 600));
+        snake = new Snake(this);
+        snakeThread = new Thread(snake);
+        snakeThread.start();
+        controller = new Controller(snake);
+        addKeyListener(controller);
 
     }
 

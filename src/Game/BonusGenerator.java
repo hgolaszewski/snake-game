@@ -11,7 +11,7 @@ public class BonusGenerator extends Rectangle{
     public BonusGenerator(Snake snake){
         
         this.snake = snake;
-        this.rand = new Random();
+        rand = new Random();
         
     }
     
